@@ -1,10 +1,5 @@
----
-- name: IOS-XR Hello World
+- name: Hello World - ping
   hosts: saul_office
   gather_facts: no
-  connection: ansible.netcommon.netconf
   tasks:
-    - name: Show version
-      cisco.iosxr.iosxr_command:
-        commands:
-          - show version
+    - ansible.builtin.ping:
