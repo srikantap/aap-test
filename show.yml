@@ -1,6 +1,6 @@
 ---
 - name: IOS-XR Hello World
-  hosts: iosxr
+  hosts: saul_office
   gather_facts: no
   connection: ansible.netcommon.netconf
   tasks:
