@@ -1,0 +1,10 @@
+---
+- name: IOS-XR Hello World
+  hosts: iosxr
+  gather_facts: no
+  connection: ansible.netcommon.netconf
+  tasks:
+    - name: Show version
+      cisco.iosxr.iosxr_command:
+        commands:
+          - show version
